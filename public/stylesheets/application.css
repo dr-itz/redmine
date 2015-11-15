@@ -124,6 +124,9 @@ a.collapsible {padding-left: 12px; background: url(../images/arrow_expanded.png)
 a.collapsible.collapsed {background: url(../images/arrow_collapsed.png) no-repeat -5px 40%;}
 
 a#toggle-completed-versions {color:#999;}
+
+a.toggle-checkboxes { margin-left: 5px; padding-left: 12px; background: url(../images/toggle_check.png) no-repeat 0% 50%; }
+
 /***** Tables *****/
 table.list { border: 1px solid #e4e4e4;  border-collapse: collapse; width: 100%; margin-bottom: 4px; }
 table.list th {  background-color:#EEEEEE; padding: 4px; white-space:nowrap; }
@@ -382,7 +385,7 @@ fieldset#filters td.values input {height:1em;}
 .add-filter {width:35%; float:right; text-align: right; vertical-align: top;}
 
 #issue_is_private_wrap {float:right; margin-right:1em;}
-.toggle-multiselect {background: url(../images/bullet_toggle_plus.png) no-repeat 0% 40%; padding-left:8px; margin-left:0; cursor:pointer;}
+.toggle-multiselect {background: url(../images/bullet_toggle_plus.png) no-repeat 0% 40%; padding-left:16px; margin-left:0; margin-right:5px; cursor:pointer;}
 .buttons { font-size: 0.9em; margin-bottom: 1.4em; margin-top: 1em; }
 
 div#issue-changesets {float:right; width:45%; margin-left: 1em; margin-bottom: 1em; background: #fff; padding-left: 1em; font-size: 90%;}
@@ -1038,6 +1041,11 @@ a.close-icon:hover {background-image:url('../images/close_hl.png');}
   padding-top: 2px;
   padding-bottom: 3px;
 }
+.icon-only {
+  background-position: 0% 50%;
+  background-repeat: no-repeat;
+  padding-left: 16px;
+}
 
 .icon-add { background-image: url(../images/add.png); }
 .icon-edit { background-image: url(../images/edit.png); }
@@ -1060,12 +1068,13 @@ a.close-icon:hover {background-image:url('../images/close_hl.png');}
 .icon-time-add  { background-image: url(../images/time_add.png); }
 .icon-stats  { background-image: url(../images/stats.png); }
 .icon-warning  { background-image: url(../images/warning.png); }
+.icon-error { background-image: url(../images/exclamation.png); }
 .icon-fav  { background-image: url(../images/fav.png); }
 .icon-fav-off  { background-image: url(../images/fav_off.png); }
 .icon-reload  { background-image: url(../images/reload.png); }
 .icon-lock  { background-image: url(../images/locked.png); }
 .icon-unlock  { background-image: url(../images/unlock.png); }
-.icon-checked  { background-image: url(../images/true.png); }
+.icon-checked  { background-image: url(../images/toggle_check.png); }
 .icon-details  { background-image: url(../images/zoom_in.png); }
 .icon-report  { background-image: url(../images/report.png); }
 .icon-comment  { background-image: url(../images/comment.png); }
@@ -1076,7 +1085,15 @@ a.close-icon:hover {background-image:url('../images/close_hl.png');}
 .icon-zoom-out { background-image: url(../images/zoom_out.png); }
 .icon-passwd { background-image: url(../images/textfield_key.png); }
 .icon-test { background-image: url(../images/bullet_go.png); }
+.icon-email { background-image: url(../images/email.png); }
+.icon-email-disabled { background-image: url(../images/email_disabled.png); }
 .icon-email-add { background-image: url(../images/email_add.png); }
+.icon-move-up { background-image: url(../images/1uparrow.png); }
+.icon-move-top { background-image: url(../images/2uparrow.png); }
+.icon-move-down { background-image: url(../images/1downarrow.png); }
+.icon-move-bottom { background-image: url(../images/2downarrow.png); }
+.icon-ok  { background-image: url(../images/true.png); }
+.icon-not-ok  { background-image: url(../images/false.png); }
 
 .icon-file { background-image: url(../images/files/default.png); }
 .icon-file.text-plain { background-image: url(../images/files/text.png); }
