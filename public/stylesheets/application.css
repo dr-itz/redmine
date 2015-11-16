@@ -294,7 +294,7 @@ div.news h3 { background: url(../images/news.png) no-repeat 0% 50%; padding-left
 div.projects h3 { background: url(../images/projects.png) no-repeat 0% 50%; padding-left: 20px; }
 
 #watchers select {width: 95%; display: block;}
-#watchers a.delete {opacity: 0.4; vertical-align: middle;}
+#watchers a.delete {opacity: 0.4; margin-left: 5px;}
 #watchers a.delete:hover {opacity: 1;}
 #watchers img.gravatar {margin: 0 4px 2px 0;}
 
@@ -455,6 +455,7 @@ div.wiki-page .contextual a {opacity: 0.4}
 div.wiki-page .contextual a:hover {opacity: 1}
 
 form .attributes select { width: 60%; }
+form .attributes select + a.icon-only { vertical-align: middle; margin-left: 4px; }
 input#issue_subject, input#document_title { width: 99%; }
 select#issue_done_ratio { width: 95px; }
 
@@ -1092,8 +1093,12 @@ a.close-icon:hover {background-image:url('../images/close_hl.png');}
 .icon-move-top { background-image: url(../images/2uparrow.png); }
 .icon-move-down { background-image: url(../images/1downarrow.png); }
 .icon-move-bottom { background-image: url(../images/2downarrow.png); }
-.icon-ok  { background-image: url(../images/true.png); }
-.icon-not-ok  { background-image: url(../images/false.png); }
+.icon-ok { background-image: url(../images/true.png); }
+.icon-not-ok { background-image: url(../images/false.png); }
+.icon-magnifier { background-image: url(../images/magnifier.png); }
+.icon-zoom-in { background-image: url(../images/zoom_in.png); }
+.icon-zoom-out { background-image: url(../images/zoom_out.png); }
+.icon-link-break { background-image: url(../images/link_break.png); }
 
 .icon-file { background-image: url(../images/files/default.png); }
 .icon-file.text-plain { background-image: url(../images/files/text.png); }
