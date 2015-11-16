@@ -498,7 +498,16 @@ textarea#custom_field_default_value {width: 95%; resize:vertical}
 
 input#content_comments {width: 99%}
 
-p.pagination {margin-top:8px; font-size: 90%}
+span.pagination {margin-top:8px; font-size: 90%}
+.pagination ul.pages {
+  margin: 0 5px 0 0;
+  padding: 0;
+  display: inline;
+}
+.pagination ul.pages li {
+  display: inline-block;
+  padding-right: 4px;
+}
 
 #search-form fieldset p {margin:0.2em 0;}
 
